@@ -1,1 +1,1 @@
-Anonymous repo for CAV 2024 Submission 5511.
+Anonymous repo, containing artefacts for the CAV 2024 Submission 5511.
