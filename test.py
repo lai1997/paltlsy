@@ -28,6 +28,17 @@ if subprocess.run(gpu_info, capture_output=True, text=True).stdout.find('failed'
 else:
     # subprocess.run(['./ltli64630', './content/paltlsy/benchmarks/existing_work/RQ1_benchmarks/flie_benchmarks/TracesFiles/abscence/Ab0.trace',
     #                 '1', '1', '1', '1', '1', '1', '1', '1', '500', '1', '2'])
-    subprocess.run(['./ltli64630', './cav-2024-submission-5511/datalog/0.trace',
+    # subprocess.run(['./ltli64630', './cav-2024-submission-5511/datalog/0.trace',
+    #                 '1', '1', '1', '1', '1', '1', '1', '1', '500', '1', '2'])
+    subprocess.run(['./ltli64630', './cav-2024-submission-5511/datalog/3.trace',
                     '1', '1', '1', '1', '1000', '1000', '1000', '1000', '1000', '1', '2'])
 
+# (~(a ^ b))^(a | b)
+#
+# t(X,Y) :- (b | c), (~(b ^ c)).
+
+# t(X,Y) :- borc(X,Z), nbc_(Z,Y).
+# borc(X,Y) :- b(X,Y).
+# borc(X,Y) :- c(X,Y).
+# nbc(X,Y) :- not bandc(X,Y).
+# bandc(X,Y) :- b(X,Z), c(Z,Y).
